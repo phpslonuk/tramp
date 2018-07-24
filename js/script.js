@@ -29,4 +29,9 @@
         document.getElementById("groteDescription").innerHTML = data[2].description;
         document.getElementById("groteSmallImg").src = "img/" + data[2].img;
 
+
+        document.getElementById("date1").innerHTML = data[0].date.toUpperCase();
+        document.getElementById("date2").innerHTML = data[1].date.toUpperCase();
+        document.getElementById("date3").innerHTML = data[2].date.toUpperCase();
+
     }

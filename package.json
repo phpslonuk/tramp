@@ -1,0 +1,23 @@
+{
+  "name": "tramp",
+  "version": "1.0.0",
+  "description": "task Junior Front-End Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phpslonuk/tramp.git"
+  },
+  "author": "M.Yezerskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phpslonuk/tramp/issues"
+  },
+  "homepage": "https://github.com/phpslonuk/tramp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

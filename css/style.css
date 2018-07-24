@@ -149,6 +149,37 @@ h3{
  	display: none
  }
 
- 
+}
 
+#date1{
+    position:absolute;
+    width:50px;
+    text-align: center;
+    color: rgb(196,0,4);
+    left:400px;
+    top:2700px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#date2{
+    position:absolute;
+    width:50px;
+    text-align: center;
+    color: rgb(196,0,4);
+    left:400px;
+    top:5450px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#date3{
+    position:absolute;
+    width:50px;
+    text-align: center;
+    color: rgb(196,0,4);
+    left:400px;
+    top:8050px;
+    font-size: 25px;
+    font-weight: bold;
 }
