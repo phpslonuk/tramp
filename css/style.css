@@ -1,0 +1,154 @@
+#circle{
+	
+	width: 135px;
+	display: block;
+	margin: 0 auto;
+}
+
+.circle{
+	margin-top: 125px; 
+}
+
+#img17{
+	
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+.img17{
+	margin-top: 75px;
+}
+
+.textz{
+	margin-top: 80px;
+}
+
+.scroll{
+	margin-top: 185px;
+}
+
+.scroll p{
+	text-align: center;
+	font-size: 20px;
+}
+
+
+#down-icon{
+	height: 55px;
+	width: 55px;
+	display: block;
+	margin: 0 auto;
+}
+
+span{
+	color:  #ffffff;
+	background-color: rgb(32,37,69);
+	padding: 20px 30px;
+	
+}
+
+h2{
+	text-align:  center;
+	font-size: 25px;
+	margin-top: 10px;
+	padding: 10px;
+
+}
+
+.mainImg{
+	
+	width: 1925px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.smallimg{
+	
+	width: 1110px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 165px;
+
+}
+
+.title{
+	color: rgb(32,37,69);
+	text-align: center;
+	font-size: 55px;
+	margin-bottom: 80px;
+
+
+}
+
+.description{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 85px;
+}
+
+.textarea{
+	width: 1200px;
+	margin: auto;
+}
+
+.footer{
+	width: 100%;
+	background-color: rgb(32,37,69);
+
+}
+
+.footer span{
+	color: rgb(32,37,69);
+	background-color:   #ffffff;
+	font-size: 30px;
+}
+
+
+h3{
+	padding-top: 80px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.social{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 250px;
+}
+
+.footer p{
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+	padding-bottom: 60px; 
+
+}
+
+
+
+@media only screen and (max-width: 1120px) {
+	.textarea{
+		width: 94%;
+		padding: 3%;
+	}
+
+ .mainImg, .smallimg{
+ 	display: inline-block;
+ 	width: 100%;
+ }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+
+ .img17, .social, .textz, .img17, span{
+ 	display: none
+ }
+
+ 
+
+}
