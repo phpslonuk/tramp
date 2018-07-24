@@ -13,7 +13,7 @@
         //header
         document.getElementById("img17").src = "img/17.png";
         document.getElementById("circle").src = "img/circle.png";
-        //content
+        //content here it was possible to use a loop, but in psd the first block of the image have different links
         document.getElementById("trampImg").src = "img/" + data[0].img;
         document.getElementById("trampTitle").innerHTML = data[0].title;
         document.getElementById("trampDescription").innerHTML = data[0].description;
