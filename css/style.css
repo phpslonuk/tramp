@@ -1,185 +1,170 @@
-#circle{
-	
-	width: 135px;
-	display: block;
-	margin: 0 auto;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.circle{
-	margin-top: 125px; 
-}
-
-#img17{
-	
-	width: 600px;
-	display: block;
-	margin: 0 auto;
-}
-
-.img17{
-	margin-top: 75px;
-}
-
-.textz{
-	margin-top: 80px;
-}
-
-.scroll{
-	margin-top: 185px;
-}
-
-.scroll p{
-	text-align: center;
-	font-size: 20px;
-}
-
-
-#down-icon{
-	height: 55px;
-	width: 55px;
-	display: block;
-	margin: 0 auto;
-}
-
-span{
-	color:  #ffffff;
-	background-color: rgb(32,37,69);
-	padding: 20px 30px;
-	
-}
-
-h2{
-	text-align:  center;
-	font-size: 25px;
-	margin-top: 10px;
-	padding: 10px;
+span {
+    color: #ffffff;
+    background-color: rgb(32, 37, 69);
+    padding: 20px 30px;
 
 }
 
-.mainImg{
-	
-	width: 1925px;
-	display: block;
-	margin: 0 auto;
-	border-radius: 10px;
-}
-
-.smallimg{
-	
-	width: 1110px;
-	display: block;
-	margin: 0 auto;
-	border-radius: 10px;
-	margin-bottom: 165px;
-
-}
-
-.title{
-	color: rgb(32,37,69);
-	text-align: center;
-	font-size: 55px;
-	margin-bottom: 80px;
-
-
-}
-
-.description{
-	text-align: center;
-	font-size: 30px;
-	margin-bottom: 85px;
-}
-
-.textarea{
-	width: 1200px;
-	margin: auto;
-}
-
-.footer{
-	width: 100%;
-	background-color: rgb(32,37,69);
-
-}
-
-.footer span{
-	color: rgb(32,37,69);
-	background-color:   #ffffff;
-	font-size: 30px;
-}
-
-
-h3{
-	padding-top: 80px;
-	text-align: center;
-	margin-bottom: 80px;
-}
-
-.social{
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 250px;
-}
-
-.footer p{
-	text-align: center;
-	color: #ffffff;
-	font-size: 20px;
-	padding-bottom: 60px; 
-
-}
-
-
-
-@media only screen and (max-width: 1120px) {
-	.textarea{
-		width: 94%;
-		padding: 3%;
-	}
-
- .mainImg, .smallimg{
- 	display: inline-block;
- 	width: 100%;
- }
-
-}
-
-@media only screen and (max-width: 760px) {
-
-
- .img17, .social, .textz, .img17, span{
- 	display: none
- }
-
-}
-
-#date1{
-    position:absolute;
-    width:50px;
+h2 {
     text-align: center;
-    color: rgb(196,0,4);
-    left:400px;
-    top:2700px;
     font-size: 25px;
-    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+
 }
 
-#date2{
-    position:absolute;
-    width:50px;
+h3 {
+    padding-top: 80px;
     text-align: center;
-    color: rgb(196,0,4);
-    left:400px;
-    top:5450px;
-    font-size: 25px;
-    font-weight: bold;
+    margin-bottom: 80px;
 }
 
-#date3{
-    position:absolute;
-    width:50px;
-    text-align: center;
-    color: rgb(196,0,4);
-    left:400px;
-    top:8050px;
-    font-size: 25px;
-    font-weight: bold;
+/* All page  */
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
+
+/* Header  */
+
+.circle {
+    margin-top: 25px;
+}
+
+.circle img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.img17 {
+    margin-top: 25px;
+}
+
+.img17 img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.textz {
+    margin-top: 25px;
+}
+
+.scroll {
+    margin-top: 85px;
+}
+
+.scroll p {
+    text-align: center;
+    font-size: 20px;
+    color: #1e2444;
+}
+
+.down-icon {
+    height: 55px;
+    width: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Content   */
+
+.trampimg {
+    margin-bottom: -14px;
+}
+
+.mainImg {
+    width: 1140px;
+    border-radius: 10px;
+}
+
+.text {
+    position: relative;
+}
+
+.textarea {
+    background-color: white;
+    top: 20px;
+    left: 130px;
+    position: absolute;
+    z-index: 5;
+}
+
+.someDate {
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
+}
+
+.secondimg {
+    border-left: 1px solid black;
+    margin: 0 auto;
+    width: 72%;
+}
+
+.title {
+    color: #202545;
+    text-align: left;
+    font-size: 55px;
+    margin-bottom: 45px;
+    padding-left: 45px;
+}
+
+.description {
+    text-align: left;
+    font-size: 30px;
+    color: #202545;
+    padding-left: 45px;
+    margin-bottom: 45px;
+}
+
+.smallimg {
+    width: 720px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+/* Footer   */
+
+.footer {
+    background-color: rgb(32, 37, 69);
+    width: 100%;
+}
+
+.footer span {
+    color: rgb(32, 37, 69);
+    background-color: #ffffff;
+    font-size: 30px;
+}
+
+.footer p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+
+.social {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+
+
+
+
+
+
+
+

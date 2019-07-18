@@ -1,37 +1,32 @@
-    var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", 'db.json');
-        rawFile.onload = () => {
-            var all = rawFile.responseText;
-            var mydata = JSON.parse(all);
-            console.log(mydata[0].title);
-            renderHTML(mydata);
-        };
-        rawFile.send();
+let rawFile = new XMLHttpRequest();
+rawFile.open("GET", 'db.json');
+rawFile.onload = () => {
+    let all = rawFile.responseText;
+    let mydata = JSON.parse(all);
+    putData(mydata);
+};
+rawFile.send();
 
+function putData(data) {
+    document.getElementById("tor").innerHTML = renderContent(data);
+}
 
-    function renderHTML(data){
-        //header
-        document.getElementById("img17").src = "img/17.png";
-        document.getElementById("circle").src = "img/circle.png";
-        //content here it was possible to use a loop, but in psd the first block of the image have different links
-        document.getElementById("trampImg").src = "img/" + data[0].img;
-        document.getElementById("trampTitle").innerHTML = data[0].title;
-        document.getElementById("trampDescription").innerHTML = data[0].description;
-        document.getElementById("trampSmallImg").src = "img/" + data[2].img;
+function renderContent(data) {
+    let res = data.map((item) => {
+        return `<div class="trampimg">
+                    <img class="mainImg" src="img/${item.img}" >
+                </div>
 
-        document.getElementById("kampImg").src = "img/" + data[1].img;
-        document.getElementById("kampTitle").innerHTML = data[1].title;
-        document.getElementById("kampDescription").innerHTML = data[1].description;
-        document.getElementById("kampSmallImg").src = "img/" + data[1].img;
-
-        document.getElementById("groteImg").src = "img/" + data[2].img;
-        document.getElementById("groteTitle").innerHTML = data[2].title;
-        document.getElementById("groteDescription").innerHTML = data[2].description;
-        document.getElementById("groteSmallImg").src = "img/" + data[2].img;
-
-
-        document.getElementById("date1").innerHTML = data[0].date.toUpperCase();
-        document.getElementById("date2").innerHTML = data[1].date.toUpperCase();
-        document.getElementById("date3").innerHTML = data[2].date.toUpperCase();
-
-    }
+                <div class="text">
+                    <div class="textarea">
+                        <p class="someDate"> ${item.date.toUpperCase()} </p>
+                    </div>
+                    <div class="secondimg">
+                        <h2 class="title">${item.title}</h2>
+                        <p class="description">${item.description}</p>
+                        <img class="smallimg" src="img/${item.img}">
+                    </div>
+                </div>`;
+    });
+    return res;
+}
