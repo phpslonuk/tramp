@@ -1,11 +1,13 @@
-let rawFile = new XMLHttpRequest();
-rawFile.open("GET", 'db.json');
-rawFile.onload = () => {
-    let all = rawFile.responseText;
-    let mydata = JSON.parse(all);
-    putData(mydata);
-};
-rawFile.send();
+let trampPromise = new Promise((resolve, reject) => {
+    fetch('db.json')
+        .then(data => {
+            resolve(data.text());
+        })
+});
+
+trampPromise.then(data => {
+    putData(JSON.parse(data));
+})
 
 function putData(data) {
     document.getElementById("tor").innerHTML = renderContent(data);
