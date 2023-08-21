@@ -18,3 +18,4 @@ will be a plus:
   - promises for ajax request
   - sass or less for css code
   - some project build tool
+  - -yep
